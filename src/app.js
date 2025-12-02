@@ -23,8 +23,9 @@ app.get('/about', (req, res) => {
   });
 });
 
-// Read-only Pokemon cards endpoints
-app.use('/api/cards', pokemonCardsRouter);
+// Endpoints produits (basés sur les cartes Pokémon)
+// Frontend: /api/products et /api/products/:id
+app.use('/api/products', pokemonCardsRouter);
 
 // Generic error handler
 app.use((err, req, res, next) => {

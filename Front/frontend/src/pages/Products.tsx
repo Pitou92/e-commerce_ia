@@ -8,6 +8,8 @@ interface Product {
   name: string;
   price: number;
   category: string;
+  imageUrl?: string;
+  stock?: number;
 }
 
 const Products = () => {
